@@ -30,5 +30,13 @@ class Stack {
             console.log("Pop process ends ");
             return this.stackTop;
         }
-    }   
+    } 
+    peek() {
+        if (this.stackTop == -1) {
+            console.log("Stack is empty");
+        }
+        else {
+            console.log("The top element of the Stack is " + this.array[this.stackTop]);
+        }
+    }  
 }
