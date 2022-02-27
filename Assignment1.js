@@ -18,5 +18,17 @@ class Stack {
             console.log(`The element being pushed is ${num}`);
             return this.stackTop;
         }
-    }    
+    } 
+    pop() {
+        if (this.stackTop == -1)
+            console.log("Stack underflow.");
+    
+        else {
+            console.log(`element ${this.array[this.stackTop]} is being popped`);
+            this.stackTop = this.stackTop - 1;
+    
+            console.log("Pop process ends ");
+            return this.stackTop;
+        }
+    }   
 }
